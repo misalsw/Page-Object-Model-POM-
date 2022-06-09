@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Custom Program/Page_Object_Model/Page-Object-Model-POM-/src/test/java/com/crm/testcases">
+        <classes>
+            <class name="com.crm.testcases.ContactsPageTest">
+                <methods>
+                    <include name="verifyContactsLabel"/>
+                    <include name="selectSingleContactsTest"/>
+                    <include name="selectMultipleContactsTest"/>
+                </methods>
+            </class>
+            <class name="com.crm.testcases.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitleTest"/>
+                    <include name="verifyUserNameTest"/>
+                    <include name="verifyContactsLink"/>
+                </methods>
+            </class>
+            <class name="com.crm.testcases.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="crmLogoImageTest"/>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
