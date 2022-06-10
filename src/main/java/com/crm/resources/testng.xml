@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.crm.ExtentReportlistner.ExtentReporterNg"></listener>
+    </listeners>
+
     <test verbose="2" preserve-order="true"
           name="C:/Custom Program/Page_Object_Model/Page-Object-Model-POM-/src/test/java/com/crm/testcases">
         <classes>
