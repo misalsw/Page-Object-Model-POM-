@@ -3,14 +3,12 @@ package com.crm.testcases;
 import com.crm.base.TestBase;
 import com.crm.pages.HomePage;
 import com.crm.pages.LoginPage;
-import com.crm.utilities.TestUtil;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
 
 public class LoginPageTest extends TestBase {
     LoginPage loginPage;
@@ -43,9 +41,7 @@ public class LoginPageTest extends TestBase {
         homePage = loginPage.login(props.getProperty("username"), props.getProperty("password"));
     }
 
-
-
-    @AfterTest
+    @AfterMethod
     public void tearDown(){
         driver.quit();
     }

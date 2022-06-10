@@ -7,15 +7,8 @@
             <class name="com.crm.testcases.LoginPageTest">
                 <methods>
                     <include name="loginPageTitleTest"/>
-                    <include name="crmLogoImageTest"/>
-                    <include name="loginTest"/>
-                </methods>
-            </class>
-            <class name="com.crm.testcases.HomePageTest">
-                <methods>
-                    <include name="verifyHomePageTitleTest"/>
-                    <include name="verifyUserNameTest"/>
-                    <include name="verifyContactsLink"/>
+<!--                    <include name="crmLogoImageTest"/>-->
+<!--                    <include name="loginTest"/>-->
                 </methods>
             </class>
         </classes>
